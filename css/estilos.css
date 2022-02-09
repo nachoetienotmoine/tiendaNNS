@@ -1,0 +1,55 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    min-height: 65px;
+}
+
+.main-title {
+    margin-top: 100px !important;
+    text-align: center;
+}
+
+.main-span-title {
+    font-size: 1.5em;
+}
+
+
+
+/* Tarjeta Selección Producto */
+.product-selection {
+    margin-top: 70px !important;
+}
+
+.create-card-styles {
+    color: #000;
+    width: 200px;
+    height: 200px;
+    background-color: #ebebeb;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+
+/* Footer */
+svg {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    color: #000
+}
+
+svg:hover {
+    color:rgba(0, 0, 0, 0.411)
+}
+
+footer p {
+    text-align: center;
+}
