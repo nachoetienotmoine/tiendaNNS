@@ -90,10 +90,11 @@
             <div class="row my-5">
                 <div class="col-12 d-flex flex-column align-items-center compra">
                     <h3>Iniciar simulación de compra</h3>
-                    <button class="btn btn-success" id="compra"><a href="#product-selection"> Iniciar</a></button>
+                    <button class="btn btn-primary" id="compra"><a href="#product-selection"> Iniciar</a></button>
                 </div>
             </div>
 
+            <!-- Productos -->
             <div class="row mx-5">
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
@@ -139,10 +140,44 @@
 
         </div>
 
-        <div class="col d-flex flex-column align-items-center">
-            <button id="product-selection" class="btn btn-primary product-selection my-3">Selecciona un Producto</button>
-            <div class="create-card my-5"></div>
-        </div>
+        <!-- Create Card -->
+        <div class="row d-flex align-items-center mt-5">
+          <div class="col-6 d-flex align-items-center justify-content-end">
+              <button id="product-selection" class="btn btn-primary product-selection">Selecciona un Producto</button>
+              <div class="create-card my-5"></div>
+          </div>
+          <div class="col-6 envio">
+              <button class="btn btn-primary" id="calculo-envio">Calcula el envío</button>
+            </div>
+          </div>
+
+          <!-- Formulario Envio -->
+          <div class="create-envio-form mx-5">
+            <form>
+              <div class="row mb-3">
+                <label for="importe" class="col-sm-2 col-form-label">Importe</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="importe">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="cantidad" class="col-sm-2 col-form-label">Cantidad</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="cantidad">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="impuestos" class="col-sm-2 col-form-label" aria-placeholder="Impuestos: 21% respecto al precio">Impuestos</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="impuestos">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-warning simular-envio">Simular</button>
+            </form>
+          </div>
+
+
+
     </main>
 
     <footer class="mt-5">
@@ -179,5 +214,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/elementos.js"></script>
+    <script src="./js/envio.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // Usuario
-    let user = prompt('Por favor ingresá tu nombre');
+    // PEDIR EL DATO EN OTRA INSTANCIA
+    // let user = prompt('Por favor ingresá tu nombre');
     localStorage.setItem("user", JSON.stringify(user));
 
     if (user == null) {

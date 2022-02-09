@@ -18,11 +18,18 @@
 }
 
 
+/* Productos */
+#compra a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 
 /* Tarjeta Selección Producto */
-.product-selection {
+/* .product-selection {
     margin-top: 70px !important;
-}
+} */
 
 .create-card-styles {
     color: #000;

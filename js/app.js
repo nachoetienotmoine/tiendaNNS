@@ -237,7 +237,3 @@ class Persona {
 // }
 
 // initMundo()
-
-
-
-// HICE UN CAMBIO BORRAR
