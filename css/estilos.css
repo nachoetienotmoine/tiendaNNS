@@ -25,6 +25,27 @@
 }
 
 
+.create-card {
+    width: 90vw;
+    height: 100px;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-card:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 15%), 0 -1px 4px 0 rgb(0 0 0 / 15%);
+    transition:cubic-bezier(1, 0, 0, 1);
+}
+
+
+
+
+
 
 /* Tarjeta Selección Producto */
 /* .product-selection {

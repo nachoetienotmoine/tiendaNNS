@@ -1,48 +1,39 @@
 $(document).ready(() => {
-
     // Caputuro elementos y valores
     $(".create-envio-form").hide()
-    // let botonCalcularEnvio = $('#calculo-envio');
-    // let botonSimularEnvio = $('.simular-envio');
+    let botonCalcularEnvio = $('#calculo-envio');
+    let botonSimularEnvio = $('.simular-envio');
     
-    // let importe = parseInt($('#importe').val());
-    let importe = document.getElementById("importe").value;
-    let cantidad = parseInt(document.getElementById("cantidad").value);
-    let impuestos = parseInt(document.getElementById("impuestos").value);
-
-
-
     $('#calculo-envio').click(function() {
         $(".create-envio-form").slideToggle()   
     })
 
-
     $('.simular-envio').click(function(e) {
         e.preventDefault();
-        
-        console.log(importe);
-        console.log(typeof importe);
-        console.log(cantidad);
-        console.log(typeof cantidad);
-        console.log(impuestos);
-        console.log(typeof impuestos);
+
+        let importe = parseInt($('#importe').val());
+        let cantidad = parseInt($('#cantidad').val());
+        let impuestos = 0.21 * importe
+
+        let divSimuladorEnvio = $('.create-card');
+
+        divSimuladorEnvio
+        .fadeIn(25000, function() {
+          $(".contenido-simulador")
+            .addClass("create-card")
+            .append("<h3>¡Costo total de tu envío!</h3>")
+            .append(`El costo total de tu envío es de $${costoTotal(importe,cantidad)}.`)
+            .css("color","#310b0a")
+            .fadeToggle(5000, function() {
+              location.reload();
+            });
+        })
     })
 
-    
-    // REALIZAR FUNCION QUE RECIBIENDO IMPORTE, CANTIDAD e IMPUESTOS CALCULE EL COSTO TOTAL DE ENVIO
-
-    function costoTotoalEnvio(p,c,env) {
-
+    // Metodos de mi app
+    function costoTotal(impo,canti) {
+        let productosImpuesto = 0.21 * impo
+        let costo = impo * canti + productosImpuesto
+        return costo;
     }
-
-    
-    
-    
-
-
-
-
-
-
-
 });
