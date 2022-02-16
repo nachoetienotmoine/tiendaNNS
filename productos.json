@@ -1,38 +1,26 @@
 [
   {
     "id": 1,
-    "nombreProducto": "Katey",
-    "precio": 10,
-    "stock": 11
+    "nombreProducto": "Key Finder",
+    "precio": 800,
+    "stock": 100
   },
   {
     "id": 2,
-    "nombreProducto": "Myles",
-    "precio": 32,
-    "stock": 20
+    "nombreProducto": "Pad Gamer",
+    "precio": 2200,
+    "stock": 100
   },
   {
     "id": 3,
-    "nombreProducto": "Abbye",
-    "precio": 80,
-    "stock": 94
+    "nombreProducto": "Sport Bag",
+    "precio": 800,
+    "stock": 90
   },
   {
     "id": 4,
-    "nombreProducto": "Zea",
-    "precio": 94,
-    "stock": 89
-  },
-  {
-    "id": 5,
-    "nombreProducto": "Yoko",
-    "precio": 72,
-    "stock": 81
-  },
-  {
-    "id": 6,
-    "nombreProducto": "Shayna",
-    "precio": 42,
-    "stock": 55
+    "nombreProducto": "Destapador",
+    "precio": 2000,
+    "stock": 50
   }
 ]
