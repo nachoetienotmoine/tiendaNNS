@@ -1,12 +1,13 @@
-Proyecto: 
+Proyecto: Prototipo básico de E-commece Tienda NNS
 
-Tutora: 
-Profesor: 
+Tutora: Micaela Barles
 
-Autor: 
+Profesor: Alex Andre Paredes Aranzamendi
+
+Autor: Diego Ignacio Etienot Moine
 
 *************************************
 
 Consideraciones: 
 
-- Los archivos de la carpeta temp seran eliminados en la entrega final
+- En el proyecto no se abarca la totalidad de lo que es un sitio web completo. Atentos a lo indicado por el profesor, este curso tampoco es abarcativo de la funcionalidad completa de un sitio web. El objetivo del presente es la practica y el aprendizaje como cimiento para la constante mejor, a la vez de dar cumplimiento a los requerimientos para lograr la certificación en el lenguaje de programación usado.
