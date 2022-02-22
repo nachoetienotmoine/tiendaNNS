@@ -6,8 +6,6 @@ const name = function () {
 const bienvenida = function () {
   let edad = parseInt(prompt("Ingresa tu edad (en números, por favor)"));
 
-  // while( typeof edad === 'number'){
-
   if (edad < 10) {
     alert("Esto no es una juguetería, te aburrirías..");
   } else if (edad > 90) {
@@ -17,7 +15,6 @@ const bienvenida = function () {
       "Perfecto, espero que nuestros productos sean de tu agrado! Adelante..."
     );
   }
-  //}
 };
 
 const satisfaccion = function () {
@@ -64,12 +61,6 @@ const satisfaccion = function () {
 name();
 bienvenida();
 satisfaccion();
-
-// Info:
-// Proyecto elegido: E-commerce
-// Nombre: Tienda NNS
-// Función simple para determinar el precio final de un pedido de producto con envío, IVA e impustos
-// (aún sin validaciones)
 
 alert(
   "Hasta que nuestro programador aprenda formularios, vamos a indagar para saber tu pedido e indicarte los precios y costos!"
@@ -130,10 +121,6 @@ compra();
 
 console.log(compra);
 
-//Me propongo crear un Array de Objetos para la gestión de stock, compras, visualizaciones y carritos; que añada funcionalidad a la pagina y de cumplimiento a las distintas consignas de avance y entrega.
-
-//alta de productos
-
 class Product {
   constructor(
     id,
@@ -176,8 +163,6 @@ class Product {
   }
 }
 
-// Producto Hardcodeado.
-
 const id = 0001;
 let nombre = "destapador";
 const color = "plateado";
@@ -206,7 +191,6 @@ console.log(product1.agregarAlCarrito(cantidadSolicitada));
 console.log("probando metodo precio final.");
 console.log(product1.precioFinal(cantidadSolicitada));
 
-// Sección Array:
 const arrayProductos = [];
 
 const simulationProduct1 = new Product(
@@ -222,7 +206,6 @@ const simulationProduct1 = new Product(
 arrayProductos.push(productCreate);
 console.log(arrayProductos);
 
-// Harcodeo tres productos
 const simulationProduct1 = new Product(
   0001,
   "Llavero",
@@ -251,12 +234,9 @@ const simulationProduct3 = new Product(
   0.05
 );
 
-// Incorporo los productos al array (PUSH) y los mustro por consola
 arrayProductos.push(simulationProduct1, simulationProduct2, simulationProduct3);
 console.log(arrayProductos);
 
-// Filtro los productos color negro (FILTER)
-// Filtro Negro es un nuevo array
 let filtroNegro = arrayProductos.filter((product) => product.color == "negro");
 console.log(`Estos son los productos de color negro ${filtroNegro}`);
 
@@ -264,7 +244,6 @@ for (let i = 0; i < filtroNegro.length; i++) {
   console.log(`${filtroNegro[i].nombre}`);
 }
 
-// Ordeno los productos por precio de menor a mayor (SORT)
 let prices = arrayProductos.sort((a, b) => {
   return a - b;
 });
@@ -294,42 +273,3 @@ class Persona {
       "https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png";
   }
 }
-
-// const miMundo = new Mundo()
-
-// const persona1 = new Persona("reloj", 2000)
-// const persona2 = new Persona("cooler", 3000)
-// const persona3 = new Persona("monitor", 7000)
-
-// miMundo.addPerson(persona1)
-// miMundo.addPerson(persona2)
-// miMundo.addPerson(persona3)
-
-// console.log(miMundo);
-
-// const initMundo = () => {
-//     const lista = document.querySelector(".contenedor")
-//     miMundo.personas.map((person) =>{
-//         const miniContenedor = document.createElement('div')
-
-//         const name = document.createElement("h3")
-//         const age = document.createElement('span')
-//         const image = document.createElement('img')
-
-//         name.textContent = `Nombre: ${person.nombre}`
-//         age.textContent = `Edad: ${person.edad}`
-//         image.src = person.image
-//         image.width = 300
-//         image.height = 300
-
-//         lista.appendChild(miniContenedor)
-
-//         miniContenedor.appendChild(name)
-//         miniContenedor.appendChild(age)
-//         miniContenedor.appendChild(image)
-
-//     })
-//     console.log(lista);
-// }
-
-// initMundo()

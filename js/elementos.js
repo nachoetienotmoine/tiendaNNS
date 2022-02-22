@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    // Usuario
-    // PEDIR EL DATO EN OTRA INSTANCIA
-    // let user = prompt('Por favor ingresá tu nombre');
     localStorage.setItem("user", JSON.stringify(user));
 
     if (user == null) {
@@ -10,7 +7,6 @@ $(document).ready(function() {
         location.reload();
     }
 
-    // Producto
     class Product {
         constructor(id,nombre,color,precioSinIva,stockActual,alicuotaIva,costoEnvio){
             this.id=id;
@@ -25,7 +21,6 @@ $(document).ready(function() {
 
     let arrayProducts = [];
 
-    // Set productos y Local Storage
     arrayProducts.push( new Product(1,"Key Finder","rojo",600,10,0.21,0.05))
     arrayProducts.push( new Product(2,"Pad Gamer","negro",1500,10,0.21,0.05))
     arrayProducts.push( new Product(3,"Sport Bag","negro",350,10,0.21,0.05))

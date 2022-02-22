@@ -1,5 +1,4 @@
 $(document).ready(() => {
-    // Caputuro elementos y valores
     $(".create-envio-form").hide()
     let botonCalcularEnvio = $('#calculo-envio');
     let botonSimularEnvio = $('.simular-envio');
@@ -30,7 +29,6 @@ $(document).ready(() => {
         })
     })
 
-    // Metodos de mi app
     function costoTotal(impo,canti) {
         let productosImpuesto = 0.21 * impo
         let costo = impo * canti + productosImpuesto
