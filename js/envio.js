@@ -21,9 +21,9 @@ $(document).ready(() => {
           $(".contenido-simulador")
             .addClass("create-card")
             .append("<h3>¡Costo total de tu envío!</h3>")
-            .append(`El costo total de tu compra, incluido el envío es de $${costoTotal(importe,cantidad)}.`)
+            .append(`El costo total de tu compra, incluido el envío es de $${costoTotal(importe,cantidad)}. Contacta a tu asesor de ventas para avanzar con tu compra.`)
             .css("color","#310b0a")
-            .fadeToggle(5000, function() {
+            .fadeToggle(10000, function() {
               location.reload();
             });
         })
